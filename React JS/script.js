@@ -1,4 +1,4 @@
-const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
+/* const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -18,3 +18,10 @@ personalMovieDB.movies.c = d;
 
 console.log(personalMovieDB);
 
+ */
+let num = 10011;
+
+do {
+    num++;
+    console.log(num);
+} while (num < 10050);
