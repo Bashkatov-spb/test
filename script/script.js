@@ -1,18 +1,36 @@
-//console.log(document.documentElement);
-//console.log(document.body.childNodes);
-//console.log(document.body.firstChild);
-//console.log(document.body.lastChild);
+'use strict';
 
-//console.log(document.body.firstElementChild);
-
-//console.log(document.querySelector('#current').nextElementSibling);
-
-for (let node of document.body.childNodes) {
-    if (node.nodeName == '#text') {
-        continue;
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
     }
 
-
-    console.log(node);
+    calcArea() {
+        return this.height * this.width;
+    }
 }
 
+class ColoredRectangleWithText extends Rectangle {
+    constructor(height, width, text, bgColor) {
+        super(height, width);
+        this.text = text;
+        this.bgColor = bgColor;
+    }
+
+    showMyProps() {
+        console.log(`Text: ${this.text}, color: ${this.bgColor}`);
+    }
+
+}
+
+const div = new ColoredRectangleWithText(25, 10, 'Hello World', 'red');
+
+div.showMyProps();
+console.log(div.calcArea());
+
+/* const square = new Rectangle(10, 10);
+const long = new Rectangle(20, 100);
+
+console.log(long.calcArea());
+console.log(square.calcArea()); */
