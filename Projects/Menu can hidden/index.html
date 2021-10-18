@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Адаптивная форма</title>
+</head>
+<body>
+
+    <nav class="nav">
+        <ul class="visible-menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Компании</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Команда</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="burger hidden">
+            <svg width="30" height="40">
+                <circle cx="15" cy="10" r="2" fill="#fff"/>
+                <circle cx="15" cy="20" r="2" fill="#fff"/>
+                <circle cx="15" cy="30" r="2" fill="#fff"/>
+            </svg>
+
+            <div class="burger-count"></div>
+
+        </button>
+
+        <ul class="hidden-menu"></ul>
+
+    </nav>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

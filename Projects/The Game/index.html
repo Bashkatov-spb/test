@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+    <title>Game</title>
+
+</head>
+<body>
+    <audio id="one" src="sounds/one.mp3"></audio>
+    <audio id="two" src="sounds/two.mp3"></audio>
+    <audio id="three" src="sounds/three.mp3"></audio>
+    <audio id="four" src="sounds/four.mp3"></audio>
+    <audio id="five" src="sounds/five.mp3"></audio>
+    <audio id="six" src="sounds/six.mp3"></audio>
+    <audio id="seven" src="sounds/seven.mp3"></audio>
+    <audio id="eight" src="sounds/eight.mp3"></audio>
+    <audio id="nine" src="sounds/nine.mp3"></audio>
+    
+    <audio id="red" src="sounds/red.mp3"></audio>
+    <audio id="green" src="sounds/green.mp3"></audio>
+    <audio id="pink" src="sounds/pink.mp3"></audio>
+    <audio id="blue" src="sounds/blue.mp3"></audio>
+    <audio id="orange" src="sounds/orange.mp3"></audio>
+    <audio id="yellow" src="sounds/yellow.mp3"></audio>
+    <audio id="purple" src="sounds/purple.mp3"></audio>
+    <audio id="black" src="sounds/black.mp3"></audio>
+    <audio id="white" src="sounds/white.mp3"></audio>
+    
+    <audio id="ant" src="sounds/ant.mp3"></audio>
+    <audio id="cat" src="sounds/cat.mp3"></audio>
+    <audio id="fox" src="sounds/fox.mp3"></audio>
+    <audio id="octopus" src="sounds/octopus.mp3"></audio>
+    <audio id="pig" src="sounds/pig.mp3"></audio>
+    <audio id="hippo" src="sounds/hippo.mp3"></audio>
+    <audio id="bee" src="sounds/bee.mp3"></audio>
+    <audio id="elephant" src="sounds/elephant.mp3"></audio>
+    <audio id="bird" src="sounds/bird.mp3"></audio>
+    
+    <audio id="dress" src="sounds/dress.mp3"></audio>
+    <audio id="hat" src="sounds/hat.mp3"></audio>
+    <audio id="jeans" src="sounds/jeans.mp3"></audio>
+    <audio id="shoes" src="sounds/shoes.mp3"></audio>
+    <audio id="shorts" src="sounds/shorts.mp3"></audio>
+    <audio id="boots" src="sounds/boots.mp3"></audio>
+    <audio id="skirt" src="sounds/skirt.mp3"></audio>
+    <audio id="sweater" src="sounds/sweater.mp3"></audio>
+    <audio id="t-shirt" src="sounds/t-shirt.mp3"></audio>
+
+
+
+
+
+    <audio id="clickBtn" src="sounds/click_the_button.mp3"></audio>
+    <audio id="clickBtn2" src="sounds/click_the_corresponde_button.mp3"></audio>
+
+    <div class="wrapper">
+        <div class="screen">
+            <div class="screen__header">
+                <h2 id="question">Choose the game</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="numbers" class="answer" value="numbers">
+                        <label for="a" id="a_text">Numbers</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="colours" class="answer" value="colours">
+                        <label for="b" id="b_text">Colours</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="animals" class="answer" value="animals">
+                        <label for="c" id="c_text">Animals</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="clothes" class="answer" value="clothes">
+                        <label for="d" id="d_text">Clothes</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="btn">Submit</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="left__panel">
+                <div class="left__info">
+                    <div class="left__close__crystal">
+                        <div class="left__close info">X</div>
+                        <div class="left__crystal info">
+                            <img src="diamond.png" alt="" class="diamond"> 
+                            <p class="score">0</p>
+                        </div>
+                    </div>
+                    <!-- <div class="left__player info">
+                        <img src="smile.png" alt="" class="smile">
+                        <div class="player"></div>
+                    </div> -->
+                    <div class="left__lesson info">
+                        <div class="lesson">1</div>
+                        <div class="progress__bar1"></div>
+                    </div>
+                    <!-- <div class="left__number info">
+                        <div class="numbers">numbers</div>
+                        <div class="progress__bar2"></div>
+                    </div> -->
+                    <div class="left__version info">version 1.0</div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center__cubes">
+              
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="right__wrapper">
+                <h1 class="question"></h1>
+                <button name="btn" class="btn"></button>
+                <p class="right__info">
+                    Нажми на кнопку <span class="knopka">Start</span>, прослушай сообщение и нажми на нужную картинку. Если хочешь прослушать ещё раз - нажми на кнопку <span class="knopka">Say</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

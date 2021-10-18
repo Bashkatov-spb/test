@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sending form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <h2>Send information</h2>
+            <div class="form-control">
+                <label for="username">Username*</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email*</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="phone-mask">Phone number*</label>
+                <input type="tel" id="phone-mask" placeholder="999-888-7766" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <small>Error Message</small>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="script/script.js"></script>
+</body>
+</html>
